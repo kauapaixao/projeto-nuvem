@@ -1,0 +1,8 @@
+br\dev\JocaS2\entity\Receita.class
+br\dev\JocaS2\repository\ReceitaRepository.class
+br\dev\JocaS2\JocaS2Application.class
+br\dev\JocaS2\WebConfigure.class
+br\dev\JocaS2\controller\ReceitaController.class
+br\dev\JocaS2\repository\UsuarioRepository.class
+br\dev\JocaS2\controller\UsuarioController.class
+br\dev\JocaS2\entity\Usuario.class
