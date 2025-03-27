@@ -1,9 +1,17 @@
-HELP.md
+# Ignorar a pasta target e todos os arquivos nela
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 
+# Incluir arquivos .jar gerados dentro da pasta target
+!target/*.jar
+
+# Incluir arquivos específicos do Maven Wrapper (caso necessário)
+!.mvn/wrapper/maven-wrapper.jar
+
+# Ignorar arquivos de build dentro de src/main e src/test (evitar versões de arquivos temporários)
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Ignorar arquivos de configuração da IDE
 ### STS ###
 .apt_generated
 .classpath
