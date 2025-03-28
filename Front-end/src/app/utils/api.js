@@ -1,7 +1,7 @@
 // -------------- CREATE --------------
 export async function addReceita(receita) {
     try {
-      let response = await fetch("http://localhost:8080/api/receitas", {
+      let response = await fetch("http://3.227.13.29:8080/api/receitas", {
         method: 'POST',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(receita)
@@ -14,7 +14,7 @@ export async function addReceita(receita) {
 
   export async function addUsuario(usuario) {
     try {
-      let response = await fetch("http://localhost:8080/api/usuarios", {
+      let response = await fetch("http://3.227.13.29:8080/api/usuario", {
         method: 'POST',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(usuario)
@@ -28,7 +28,7 @@ export async function addReceita(receita) {
   // -------------- READ ----------------
   export async function getReceitas() {
     try {
-      let response = await fetch("http://localhost:8080/api/receitas");
+      let response = await fetch("http://3.227.13.29:8080/api/receitas");
       let data = await response.json();
       return data;
     } catch (error) {
@@ -38,7 +38,7 @@ export async function addReceita(receita) {
   
   export async function getReceitasById(id) {
     try {
-      let response = await fetch(`http://localhost:8080/api/receitas?id=${id}`);
+      let response = await fetch(`http://3.227.13.29:8080/api/receitas?id=${id}`);
       let data = await response.json();
       return data;
     } catch (error) {
@@ -48,7 +48,7 @@ export async function addReceita(receita) {
 
   export async function getUsuario() {
     try {
-      let response = await fetch("http://localhost:8080/api/usuario");
+      let response = await fetch("http://3.227.13.29:8080/api/usuario");
       let data = await response.json();
       return data;
     } catch (error) {
@@ -59,7 +59,7 @@ export async function addReceita(receita) {
   // ------------------- UPDATE -------------------
   export async function updateReceita(receita) {
     try {
-      let response = await fetch("http://localhost:8080/api/receitas/" + receita.id, {
+      let response = await fetch("http://3.227.13.29:8080/api/receitas" + receita.id, {
         method: 'PUT',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(atividade)
@@ -73,7 +73,7 @@ export async function addReceita(receita) {
   // --------------------- DELETE ----------------------
   export async function deleteReceita(id) {
     try {
-      let response = await fetch("http://localhost:8080/api/receitas/" + id, {
+      let response = await fetch("http://3.227.13.29:8080/api/receitas" + id, {
         method: 'DELETE',
       });
       return response.status;
